@@ -1,0 +1,15 @@
+{
+  "name": "osumaniaweb",
+  "version": "1.0.0",
+  "description": "osu mania for the web",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Ivan Quiroga",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3",
+    "osu-mania-stable": "^5.0.0"
+  }
+}
