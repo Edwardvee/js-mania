@@ -42,8 +42,8 @@ export class Chart {
   setScreenSize() {
     let w = window.innerWidth;
     let h = window.innerHeight;
-    this.canvas.width = 1000;
-    this.canvas.height = 13720;
+    this.canvas.width = w;
+    this.canvas.height = h;
   }
 
   run() {

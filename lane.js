@@ -16,12 +16,12 @@ export const drawPressedLane = (ctx, l, d, u, r) => {
 };
 export const drawLane = (ctx, l, d, u, r) => {
   ctx.beginPath();
-  ctx.rect(400, 0, 200, 13720);
+  ctx.rect( 900,0, 700, 13720);
   ctx.fill();
-  ctx.drawImage(l, 100, 120, 50, 30);
-  ctx.drawImage(d, 125, 120, 50, 30);
-  ctx.drawImage(u, 150, 120, 50, 30);
-  ctx.drawImage(r, 175, 120, 50, 30);
+  ctx.drawImage(l, 900, 1100, 175, 175);
+  ctx.drawImage(d, 1250, 1100, 175, 175);
+  ctx.drawImage(u, 1425, 1100, 175, 175);
+  ctx.drawImage(r, 1600, 1100, 175, 175);
 };
 
 console.log(Settings.dt)
