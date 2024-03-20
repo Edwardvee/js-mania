@@ -5,22 +5,22 @@ function convertir(data) {
     let firstThree = parts.slice(0, 3);
     if (firstThree[0] == 64) {
       firstThree[0] = "l";
-      firstThree[1] = "100";
+      firstThree[1] = "450";
     } else if (firstThree[0] == 192) {
-      firstThree[0] = "d";
-      firstThree[1] = "125";
+      firstThree[0] = "u";
+      firstThree[1] = "575";
 
     } else if (firstThree[0] == 320) {
-      firstThree[0] = "u";
-      firstThree[1] = "150";
+      firstThree[0] = "d";
+      firstThree[1] = "700";
 
     } else if (firstThree[0] == 448) {
       firstThree[0] = "r";
-      firstThree[1] = "175";
+      firstThree[1] = "825";
 
         }
         //firstThree[2] = Math.floor(firstThree[2] / 3)
-    return "ctx.drawImage("+firstThree[0]+", "+firstThree[1] + ","+firstThree[0] + "pos - "+firstThree[2] +",25, 30)";
+    return "ctx.drawImage("+firstThree[0]+", "+ firstThree[1] + ","+firstThree[0] + "pos -"+firstThree[2] +"+("+firstThree[2] +"*speed),125, 125)";
   });
   console.log(processedLines.join(";"));
   return processedLines.join(";");

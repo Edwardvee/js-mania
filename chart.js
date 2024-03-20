@@ -36,6 +36,9 @@ export class Chart {
     this.up.src = "img/up.png";
     this.right = new Image(75, 143);
     this.right.src = "img/right.png";
+
+    this.line = new Image(5, 5);
+    this.line.src = "img/line.png";
     this.setScreenSize()
      
   };
@@ -46,11 +49,10 @@ export class Chart {
     this.canvas.height = h;
   }
 
-  run() {
-  
-    drawLane(this.ctx, this.k_left, this.k_down, this.k_up, this.k_right);
+  run(deltatime) {
+    drawLane(this.ctx, this.k_left, this.k_down, this.k_up, this.k_right,this.line) ;
     drawPressedLane(this.ctx, this.kd_left, this.kd_down, this.kd_up, this.kd_right);
-    drawKeys(this.ctx, this.left, this.down, this.up, this.right);
+    drawKeys(this.ctx, this.left, this.down, this.up, this.right, deltatime);
     //console.log(Keys.keys_info);
   }
 }

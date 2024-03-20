@@ -13,8 +13,8 @@ class Game {
         let newtime = Date.now();
         Settings.dt = (newtime - this.previoustime) / 1000;
         this.previoustime = newtime;
-        this.chart.run();
-        console.log(Settings.dt)
+        this.chart.run(Settings.dt);
+      //  console.log(Settings.dt)
         requestAnimationFrame(this.run)
 
     }
