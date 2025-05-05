@@ -9,6 +9,7 @@ export class Chart {
     this.canvas = document.querySelector("canvas");
    
     this.ctx = this.canvas.getContext("2d");
+    
     this.k_left = new Image(75, 143);
     this.k_left.src = "img/k_left.png";
     this.k_left.style.opacity =  "0";

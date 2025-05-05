@@ -20,7 +20,7 @@ function convertir(data) {
 
         }
         //firstThree[2] = Math.floor(firstThree[2] / 3)
-    return "ctx.drawImage("+firstThree[0]+", "+ firstThree[1] + ","+firstThree[0] + "pos -"+firstThree[2] +"+("+firstThree[2] +"*speed),125, 125)";
+    return "ctx.drawImage("+firstThree[0]+", "+ firstThree[1] + ","+firstThree[0] + "pos -("+firstThree[2] +"*speed*deltatime),125, 125)";
   });
   console.log(processedLines.join(";"));
   return processedLines.join(";");
